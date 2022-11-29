@@ -1,0 +1,50 @@
+.tableC {
+  width: 100%;
+  margin: 0 4px;
+  -webkit-box-shadow: 8px 11px 41px -17px rgba(69, 67, 69, 0.78);
+  -moz-box-shadow: 8px 11px 41px -17px rgba(69, 67, 69, 0.78);
+  box-shadow: 8px 11px 41px -17px rgba(69, 67, 69, 0.78);
+}
+.tableC .trC {
+  text-align: center;
+
+  color: white;
+  font-size: large;
+}
+.tableC .tdC,
+.tableC .thC {
+  padding: 15px;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  color: black;
+  border: solid 1px rgb(188, 180, 180);
+}
+.tbodyC :hover {
+  background-color: gray;
+}
+.thCbgreen {
+  border: solid 1px rgb(188, 180, 180);
+  font-size: large;
+  color: green;
+  padding: 20px;
+}
+.thCblue {
+  border: solid 1px rgb(188, 180, 180);
+  font-size: large;
+  padding: 20px;
+  color: blue;
+}
+
+.tableC .thNoneBorder {
+  padding: 15px;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  color: black;
+}
+.tdCyellow{
+  color: orange !important ; 
+}
