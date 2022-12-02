@@ -1,21 +1,17 @@
-//Pages
-import Main from "./Pages/Home/Main/Main";
-import Blog from "./Pages/Blog";
-import Contact from "./Pages/Contact";
-//Components
-import Navbar from "./Components/Navbar";
-//react-router-dom
-import { Route, Routes } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
+import Navbar from "./Components/Global/Navbar";
+import Footer from "./Components/Global/Footer";
 function App() {
   return (
-    <div className="bg-lime-700 bg-gradient-to-r from-green-900" >
-      <Navbar/>
+    <div>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Blog" element={<Blog />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
