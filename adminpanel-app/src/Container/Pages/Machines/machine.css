@@ -1,0 +1,167 @@
+.Machine {
+  display: flex;
+  flex-direction: column;
+}
+.MachineContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 10px 20px;
+}
+
+.MachineContainer > .PieChart {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+}
+.MachineContainer > .PieChart > .texttop {
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.MachineContainer > .PieChart > .textbottom {
+  text-align: center;
+}
+.textbottom > .phead {
+  color: #71c41d;
+  font-size: 20px;
+}
+.textbottom > .pnumber {
+  font-size: 30px;
+  font-weight: bold;
+}
+.textbottom > .machineoptions {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+.machineoptions > .textblue {
+  color: rgb(71, 192, 225);
+}
+.machineoptions > .textblue > p {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+  color: #47C0E1;
+}
+.machineoptions > .textblue > p > span {
+  color: black;
+  padding: 0 5px;
+}
+.machineoptions > .textgreen {
+  color: #71c41d;
+}
+.machineoptions > .textgreen > p {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  color: #71c41d;
+}
+.machineoptions > .textgreen > p > span {
+  color: black;
+  padding: 0 5px;
+}
+.machineoptions > .textred {
+  color: red;
+}
+.machineoptions > .textred > p {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.machineoptions > .textred > p > span {
+  color: black;
+  padding: 0 5px;
+}
+
+.MachineContainer > .tableContainer {
+  width: 100%;
+  margin: 0 auto auto auto;
+  padding-bottom: 40px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+}
+.h4 {
+  margin: 20px;
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.tableContainer > .table {
+  border-radius: 10px;
+  border-spacing: 1;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.tableContainer > .table > .thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.tableContainer > .table > .thead > .tr {
+  height: 60px;
+  background: #f0f6fd;
+  font-size: 16px;
+}
+.tableContainer > .table > .thead > .tr > th {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: black;
+  line-height: 1.2;
+  font-weight: unset;
+  text-align: start;
+}
+.column1 {
+  width: 260px;
+  padding-left: 10px;
+}
+.column2 {
+  width: 260px;
+  padding-left: 10px;
+  color: #f6ba13;
+  font-weight: bold;
+}
+.columnActive {
+  color: #71c41d;
+}
+.columnPasif{
+  color: red;
+}
+
+.tableContainer > .table > .tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  background: white;
+}
+.tableContainer > .table > .tbody > .tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: gray;
+  line-height: 1.2;
+  font-weight: unset;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  height: 48px;
+  text-align: start;
+}
+.tableContainer > .table > .tbody > .tr:hover {
+  background: #f0f6fd;
+}
+
+@media only screen and (max-width: 850px) {
+  .MachineContainer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,164 @@
+.detailedView {
+  display: flex;
+  flex-direction: column;
+}
+.detailedView > .detailedViewCardContiner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+}
+
+.detailedView > .detailedViewCardContiner > .detailedViewCard {
+  background: white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.18);
+}
+
+.detailedView > .detailedViewCardContiner > .detailedViewCard > h3 {
+  color: #2bbfcf;
+  padding: 0 10px;
+  font-size: 24px;
+}
+.detailedView > .detailedViewCardContiner > .detailedViewCard > p {
+  text-align: center;
+  font-size: 32px;
+  color: gray;
+  font-weight: bold;
+}
+.detailedView > .detailedViewCardContiner > .detailedViewCard > p > span {
+  color: #2bbfcf;
+}
+
+.detailedView
+  > .detailedViewCardContiner
+  > .detailedViewCard
+  > .detailedViewCardBottom {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin: 0 40px;
+  color: gray;
+}
+.detailedView
+  > .detailedViewCardContiner
+  > .detailedViewCard
+  > .detailedViewCardBottom
+  > .icon {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: #2bbfcf;
+}
+.detailedView
+  > .detailedViewCardContiner
+  > .detailedViewCard
+  > .detailedViewCardBottom
+  > .icon
+  > span {
+  color: gray;
+}
+.detailedViewBottomContiner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+  margin-top: 20px;
+}
+.detailedView > .detailedViewBottomContiner > .RecipeInformation {
+  background: white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.18);
+}
+.detailedView
+  > .detailedViewBottomContiner
+  > .RecipeInformation
+  > .RecipeFlexTop {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 10px 20px 0 20px;
+  font-size: 20px;
+}
+.detailedView
+  > .detailedViewBottomContiner
+  > .RecipeInformation
+  > .RecipeFlexTop
+  > .blue {
+  color: #2bbfcf;
+}
+.detailedView > .detailedViewBottomContiner > .RecipeInformation > .BottomText {
+  margin: 10px 0 10px 20px;
+  color: gray;
+}
+.DetailedViewTable {
+  border-radius: 10px;
+  border-spacing: 1;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  margin: 30px;
+}
+.DetailedViewTable > thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.DetailedViewTable > thead > tr {
+  height: 60px;
+  background: #f0f6fd;
+  font-size: 16px;
+}
+.DetailedViewTable > thead > tr > th {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: black;
+  line-height: 1.2;
+  font-weight: unset;
+  text-align: center;
+}
+.DetailedViewTable > tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.DetailedViewTable > tbody > tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: gray;
+  line-height: 1.2;
+  font-weight: unset;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  height: 48px;
+  text-align: center;
+}
+.DetailedViewTable > tbody > tr:hover {
+  background: #f0f6fd;
+}
+.detailedViewBottomContiner > .Piechart {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.detailedViewBottomContiner > .Piechart > p {
+  margin: 20px 40px;
+  font-size: 20px;
+  color: gray;
+}
+.detailedView > .Exturders {
+  background: white;
+  margin-top: 20px;
+}
+.detailedView > .Exturders > .ExturdersFlex {
+  display: flex;
+  background: black;
+  color: lightgray;
+  padding: 0 20px;
+  justify-content: space-between;
+  justify-items: center;
+}
